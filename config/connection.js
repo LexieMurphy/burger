@@ -18,5 +18,18 @@ connection.connect(function(err) {
   console.log("connected as id " + connection.threadId);
 });
 
+if (process.env.JAWSDB_URL) {
+  connection = mysql.createConnection(proess.env.JAWSDB_URL);
+} else {
+  connection = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: "Lovegod88*",
+    database: "burgers_db"
+
+  })
+}
+
 // Export connection for our ORM to use.
+connection.connect();
 module.exports = connection;
