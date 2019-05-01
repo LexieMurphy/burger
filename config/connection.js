@@ -11,7 +11,7 @@ else {
     port: 3306,
     user: "mx6q5jyx4bdcde49",
     password: "h5ckaw1wl708ivt9",
-    database: "	ktxqcofhomhbouof"
+    database: "ktxqcofhomhbouof"
   });
 }
 
